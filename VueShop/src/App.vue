@@ -7,7 +7,8 @@ import zherawa from "./components/zherawa.vue";
 
 <template>
   <div class="flex flex-col h-screen p-1 gap-7">
-    <navs />
+    <!-- paramitarize the navs -->
+    <navs name="Header" />
 
     <div class="flex flex-row flex-1 gap-7">
       <sidebar class="p-1 flex-3" />
