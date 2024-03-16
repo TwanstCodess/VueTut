@@ -6,6 +6,9 @@ import AOS from "aos";
 onMounted(() => {
   AOS.init();
 });
+onMounted(() => {
+  document.cookie = "lang=EN";
+});
 </script>
 
 <template>

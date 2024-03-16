@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import { onMounted, ref } from "vue";
 
 const randomuser = ref(null);
@@ -16,18 +16,38 @@ async function GetDataUser() {
 onMounted(async () => {
   await GetDataUser();
 });
-</script>
-
+</script> -->
 <template>
   <div
     data-aos="fade-up"
     class="flex flex-col items-center justify-center gap-y-3"
   >
-    <p>
-      Lorem Ipsum Lorem ipsum is placeholder text commonly used in the graphic,
-      <br />
-      print, and publishing industries for previewing layouts and visual <br />
-      mockups.
-    </p>
+    <select name="lang" v-model="lang">
+      <option value="en">English</option>
+      <option value="ku">Kurdish</option>
+    </select>
+    <p>{{ translate("hi") }}</p>
+    <p>{{ translate("name") }}</p>
   </div>
 </template>
+
+<script>
+import { Translation } from "vue-i18n";
+import en from "../lang/en.js";
+import ku from "../lang/ku.js";
+var x = en;
+export default {
+  mixins: [x, ku],
+  data() {
+    return {
+      lang: "en",
+    };
+  },
+  methods: {
+    translate(props) {
+      return this[this.lang][props];
+    },
+  },
+};
+var eng = en;
+</script>
