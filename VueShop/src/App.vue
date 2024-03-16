@@ -1,17 +1,15 @@
 <script setup>
-import navs from "./components/navs.vue";
-import bodys from "./components/bodys.vue";
-import sidebar from "./components/sidbar.vue";
-import zherawa from "./components/zherawa.vue";
+import layouts from "./layout/index.vue";
 </script>
 
 <template>
-  <div class="flex flex-col h-screen p-1 gap-7">
-    <!-- paramitarize the navs -->
-    <navs />
-    <div class="flex">
-      <RouterView></RouterView>
-    </div>
-    <zherawa />
-  </div>
+  <Suspense>
+    <layouts />
+
+    <template #fallback>
+      <div class="flex items-center justify-center h-screen">
+        <h1 class="text-2xl animate-pulse">&#9706;</h1>
+      </div>
+    </template>
+  </Suspense>
 </template>
