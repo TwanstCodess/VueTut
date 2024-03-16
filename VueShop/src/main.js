@@ -6,6 +6,8 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 import home from './pages/home.vue'
 import about from './pages/about.vue'
+import products from './pages/products.vue'
+import product from './pages/product.vue'
 
 const pagerouts = createRouter({
     history: createWebHashHistory(),
@@ -19,7 +21,17 @@ const pagerouts = createRouter({
             path: '/about',
             name: "about",
             component: about
-        }
+        },
+        {
+            path: '/products',
+            name: "products",
+            component: products
+        },
+        {
+            path: '/products/:id',
+            name: "product",
+            component: product
+        },
     ]
 });
 

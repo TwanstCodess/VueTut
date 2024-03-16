@@ -10,9 +10,7 @@
       <div class="hidden md:flex">
         <RouterLink to="/" class="mx-4 text-white">Home</RouterLink>
         <RouterLink to="/about" class="mx-4 text-white">About</RouterLink>
-
-        <a href="#" class="mx-4 text-white">Services</a>
-        <a href="#" class="mx-4 text-white">Contact</a>
+        <RouterLink to="/products" class="mx-4 text-white">Products</RouterLink>
       </div>
       <div class="md:hidden">
         <button id="mobile-menu-btn" class="text-white focus:outline-none">
