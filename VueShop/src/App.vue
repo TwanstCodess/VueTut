@@ -9,10 +9,8 @@ import zherawa from "./components/zherawa.vue";
   <div class="flex flex-col h-screen p-1 gap-7">
     <!-- paramitarize the navs -->
     <navs name="Header" />
-
-    <div class="flex flex-row flex-1 gap-7">
-      <sidebar class="p-1 flex-3" />
-      <bodys class="flex-1" />
+    <div class="flex">
+      <RouterView></RouterView>
     </div>
     <zherawa />
   </div>
