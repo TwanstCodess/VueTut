@@ -1,5 +1,11 @@
 <script setup>
 import layouts from "./layout/index.vue";
+import { onMounted } from "vue";
+import AOS from "aos";
+
+onMounted(() => {
+  AOS.init();
+});
 </script>
 
 <template>

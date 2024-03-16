@@ -1,9 +1,9 @@
 import './assets/style/style.css'
 import { createApp } from 'vue'
 import App from './App.vue'
+import "aos/dist/aos.css";
 
 import { createRouter, createWebHashHistory } from 'vue-router'
-
 import home from './pages/home.vue'
 import about from './pages/about.vue'
 import products from './pages/products.vue'
