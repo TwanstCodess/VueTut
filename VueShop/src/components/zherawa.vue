@@ -1,3 +1,7 @@
 <template>
-  <div class="h-32 bg-slate-500">Header</div>
+  <footer class="p-4 text-white bg-gray-800">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Your Twanst Codes. All rights reserved.</p>
+    </div>
+  </footer>
 </template>

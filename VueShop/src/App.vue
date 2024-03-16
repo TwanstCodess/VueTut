@@ -8,7 +8,7 @@ import zherawa from "./components/zherawa.vue";
 <template>
   <div class="flex flex-col h-screen p-1 gap-7">
     <!-- paramitarize the navs -->
-    <navs name="Header" />
+    <navs />
     <div class="flex">
       <RouterView></RouterView>
     </div>
